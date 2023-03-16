@@ -13,7 +13,7 @@ drugs %>%
   geom_col(position = "dodge") +     # Bar chart with grouped bars
   labs(
     title = str_wrap("Tracking the Approval of Human and Veterinary Drugs in Europe", 40),   # Title of the chart
-    subtitle = str_wrap ("Number of human & veterinary drugs between 1995 and 2023, split by authorisation status.", 60),   # Subtitle
+    subtitle = str_wrap ("Number of human & veterinary drugs between 1995 and 2023, split by authorisation status.", 100),   # Subtitle
     caption = "Data: European Medicines Agency",   # Caption
     x = "", y ="" 
   ) +
@@ -21,7 +21,7 @@ drugs %>%
   scale_y_continuous(breaks = seq(0, 1500, by = 100)) +    # Y-axis tick marks
   theme_minimal() + 
   theme(
-    plot.title = element_text(family = "sans", size = 18, face = "bold"),   # Title font and size
+    plot.title = element_text(family = "sans", size = 26, face = "bold"),   # Title font and size
     plot.subtitle = element_text(family = "sans", size = 12),    # Subtitle font and size
     axis.text = element_text(family = "sans", size = 10),   # Axis font and size
     legend.text = element_text(family = "sans", size = 8),   # Legend font and size
